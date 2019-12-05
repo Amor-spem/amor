@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>(第一天)2019年12月5日</title>
+    <link rel="stylesheet" href="css\monokai-sublime.css">
+    <style>
+    .陋室铭 {
+        background-color: black;
+        color: white;
+        width: 20%;
+        float: left;
+        height: 370px;
+    }
+    .雪 {
+        background-color: teal;
+        color:tomato;
+        width: 80%;
+        float: right;
+        height: 370px;
+    }
+    .响应式布局 {
+        float: left;
+        margin: 5px;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body background="https://pic2.superbed.cn/item/5de8ae18f1f6f81c50c209bc.png" style="width: 100%;">
+    <script src="js\highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <pre><code class="html"><p>highlight无法显示HTML代码化代码</p></code></pre>
+    
+    <h5 id="db">我的第一个标题</h5>
+    <!--<a name="db"></a>-->
+    <p>我的第一个段落</p>
+    <b>加粗字体</b>
+    <br>
+    <a href="http://amor.spem.site">AmorSpem This is a link</a>
+    <br>
+    <img src="https://pic2.superbed.cn/item/5de7855df1f6f81c508c3c20.jpg" alt="" width="400" height="200">
+    <h2>HTML元素</h2>
+    <pre>
+        html中元素指的是开始标签到结束标签的所有代码
+        标签中间的内容也就是元素内容
+        大部分元素可以拥有<b>属性</b>
+        大多数 HTML 元素可以<b>嵌套</b>
+        HTML 标签对大小写不敏感,但推荐小写
+    </pre>
+    <h2>HTML属性</h2>
+    <pre >
+        属性提供了有关HTML元素的更多信息
+        属性以名称/值的形式出现,例如:name="value"
+        属性出现在开始标签中,例如a标签元素中的开始标签定义了超文本链接的地址
+        属性加引号,单双均可,错开使用可使值本身含有双引号
+        属性              值                  含义
+        class             classname           元素的类名
+        style             style_definition    元素行内样式
+        id                id                  元素唯一id
+        title             text                元素的额外信息
+        <h4 align='conter'>我无法居中 在表格外align=conter我也不知道为何无法生效,好像是因为版本的原因</h4>
+        <table width="100%">
+            <h1 align="center">我可以居中 在表格内可以生效</h1>
+        </table>
+    </pre>
+    <hr />
+    <h2>HTML标题</h2>
+    <pre>
+        h1到h6定义标题 1最大 6最小 浏览器会在标题后方自动添加空行
+        搜索引擎使用标题为的网页的结构和内容编制索引,对用户也是
+        所以仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们
+        <!--我是注释-->
+    </pre>
+    <h2>HTML段落</h2>
+    <pre>
+        p定义段落
+        会自动在段落后添加空行(p)是块级元素
+        HTML中的连续空行或者空格都会被算作一个空格
+    </pre>
+    <h2>HTML样式</h2>
+    <pre style="background-color:grey">
+        <b>外部样式表 当样式要运用在多个页面时 引入外部样式表减少代码量</b>
+        <b>内部样式表 在head位置的style样式</b>
+        <b>内联样式表 在个别元素需要的样式时,直接在相关标签中使用样式属性</b>
+        style可以改变HTML的样式
+        避免使用 center font basefont s strike u align bgcolor color 使用样式来代替
+        background-color:blue 将当前元素背景修改为这个色
+        style淘汰了旧的align的属性
+    </pre>
+        <p style="font-family: verdana">修改字体font-family</p>
+        <p style="font-family: verdana;color: aqua;">修改颜色color</p>
+        <p style="font-family: verdana;color: aqua;font-size: 33px;">修改大小font-size</p>
+        <p style="font-family: verdana;color: aqua;font-size: 33px;text-align: center;">前面无法居中的问题在这里解决了</p>
+
+    <h2>文本格式化 引用</h2>
+
+        <b>加粗</b><br>
+        <big>加大</big><br>
+        <em>强调</em><br>
+        <i>斜体</i><br>
+        上面俩有啥区别= =<br>
+        <small>缩小</small><br>
+        <b style="color:yellow;">插入一个技巧 ctrl+enter在行下面插入</b><br>
+        <strong>加重语气??</strong><br>
+        添加下标<sub>下标</sub><br>
+        添加上标<sup>上标</sup><br>
+        <ins>插入字??和添加下划线有毛区别?</ins><br>
+        <del>删除字(哈哈,假装删除专用)</del><br>
+        <abbr title="定义缩写">缩写</abbr><br>
+        <acronym title="I LOVE YOU">ILY</acronym><br>
+        上面俩也没啥区别啊<br>
+        <address>amor@soem.site</address><br>
+        <bdo dir="rtl">倒车入库</bdo><br>
+        <blockquote>加长引用 白日依山尽 黄河入海流 欲穷千里目 更上一层楼 五十年来，WWF 一直致力于保护自然界的未来。 WWF 工作于 100 个国家，并得到美国一百二十万会员及全球近五百万会员的支持。五十年来，WWF 一直致力于保护自然界的未来。 WWF 工作于 100 个国家，并得到美国一百二十万会员及全球近五百万会员的支持。<br>
+        </blockquote>
+        超长文本自动缩进整理<br>
+        <q>短引用</q><br>
+        <br>
+        <cite>引用 引证</cite><br>
+        <dfn>差点看成dnf...定义项目?什么意思?意思有点复杂 大致意思是对翻译和搜索有帮助</dfn><br>
+        <b>这就很尴尬了,前面乱使用pre标签,导致效果显示不正常= =</b>
+        <p>表示键盘输入</p>
+        <p><kbd>键盘输入</kbd></p>
+        <code><p>编程代码示意 但好像无法显示html代码</p></code>
+        <code>
+            <pre>
+                code和pre组合起来
+                可以保留换行和空格
+            </pre>
+        </code>
+        <p><var>E</var> = <var>m</var> <var>c</var><sup>2</sup></p>
+        <p><var>E=MC</var><sup>2</sup>不懂为何这么写,应该也是为了浏览器的搜索和翻译吧,写给计算机看的</p>
+        <!--注释-->
+        <!--[条件]>
+            代码
+        <![结束]-->
+    <h2>HTML链接</h2>
+    <a href="http://amor.spem.site/" target="_blank">AmorSpem</a><br>
+    <b>name属性 name规定锚的名称 对用户不可见 当使用命名锚（named anchors）时，我们可以创建直接跳至该命名锚（比如页面中某个小节）的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了</b>
+    <br>
+    <a name="mao">锚 可以用id属性代替</a><br>
+    <a href="#mao">mao</a><br>
+    <a href="猫.html">猫</a><br>
+    <a href="#db">返回顶部</a>
+    <h2>图像</h2>
+    <p><img src="https://pic3.superbed.cn/item/5ddf5f028e0e2e3ee9dc9eec.gif" align="left"><b>推荐大家去看瑞克与莫蒂,很好看的,,嘿嘿<br>这里使图片左边悬浮left <br>右边就是right <br><a href="https://amor.spem.site/2019/11/28/%E7%91%9E%E5%85%8B%E4%B8%8E%E8%8E%AB%E8%92%82%E7%AC%AC%E5%9B%9B%E5%AD%A3%E8%BF%9E%E8%BD%BD%E4%B8%AD.html">点这里观看第四季</a></b><br>
+    <a href="http://amor.spem.site/"><img src="https://pic.superbed.cn/item/5dde5da38e0e2e3ee9bfc48c.jpg" width="300" height="200" alt="替代文本,当图片无法显示是展示"></a>
+    <p>map 和 area 创建地图映射</p>
+    <h2>HTML表格</h2>
+    <p>表格由table定义 表格的行由tr定义 每行的单元格由td定义
+        其中可以包含文本 图片 列表 段落 等 还可以套一个表格,果然世界的本质就是套娃<br>
+        下面来试一下子
+    </p>
+    <table border="1" cellpadding="10" cellspacing="10" background="https://pic1.superbed.cn/item/5de8ae34f1f6f81c50c215db.png">
+        <th bgcolor="red">坐标1</th>
+        <th>坐标2</th>
+        <th>坐标3</th>
+        <th colspan="2">坐标45</th>
+        <th>坐标6</th>
+
+        <tr>
+            <td bgcolor="yellow">
+                1,1
+            </td>
+            <td>
+                1,2
+            </td>
+            <th rowspan="2">竖向合并单元格</th>
+            <td>
+                1,4
+            </td>
+            <td>
+                1,5
+            </td>
+            <td>
+                1,6
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2,1
+            </td>
+            <td>
+                不得不说,这表格的结构真漂亮, <br> 想出这种点子也是有点牛逼
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                嵌套列表
+                <ul>
+                    <li>小猫</li>
+                    <li>小狗</li>
+                    <li>无序列表</li>
+                </ul>
+                <ol>
+                    <li>有序列表</li>
+                    <li>2</li>
+                </ol>
+                <dl>
+                    <dt>定义列表</dt>
+                    <dd>不太懂什么意思</dd>
+                </dl>
+            </td>     
+            <td>
+                还能再套个表格<br>
+                <table border="1" frame="vsides">
+                    <tr>
+                        <td>1,1</td>
+                        <td>1,2</td>
+                    </tr>
+                    <tr>
+                        <td>2,1</td>
+                        <td>这个表格只有左右边框哦! frame 属性</td>
+                    </tr>
+                </table>
+            </td>       
+        </tr>
+    </table>
+    <b>套多了也好复杂啊= =......不过还能撸的顺,已经不错了</b>
+    <h2>块元素&内联元素</h2>
+    <p>块元素会以新行来开始和结束 例如:h1 p ul table <br>内联元素则不会 例如:b td a img <br>
+    div是块元素 起到容器的作用 无特定含义 与css组合使用 可对大块内用设定样式属性 <br>
+    还可作为布局文档的作用 取代古老的表格布局方式<br>
+    span元素无特定含义 用来组 <span style="color: rgb(0, 255, 13);">文档中的行内</span> 元素,嗯!就像前面那样
+    </p>
+    <h2>类class</h2>
+<div class="陋室铭">
+    <h2 style="padding: 20px;">陋室铭</h2>
+    <p style="padding: 20px;">山不在高，有仙则名。 <br>
+    水不在深，有龙则灵。<br>
+    斯是陋室，惟吾德馨。<br>
+    苔痕上阶绿，草色入帘青。<br>
+    谈笑有鸿儒，往来无白丁。<br>
+    可以调素琴，阅金经。<br>
+    无丝竹之乱耳，无案牍之劳形。<br>
+    南阳诸葛庐，西蜀子云亭。<br>
+    孔子云：何陋之有？</p>
+</div>
+<div class="雪">
+    <h2 style="padding: 20px;">沁园春·雪</h2>
+    <p style="padding: 20px;">北国风光，千里冰封，万里雪飘。
+            望长城内外，惟余莽莽；大河上下，顿失滔滔。(余 通：馀)
+            山舞银蛇，原驰蜡象，欲与天公试比高。(原驰 原作：原驱)
+            须晴日，看红装素裹，分外妖娆。(红装 一作：银装)
+            江山如此多娇，引无数英雄竞折腰。
+            惜秦皇汉武，略输文采；唐宗宋祖，稍逊风骚。
+            一代天骄，成吉思汗，只识弯弓射大雕。
+            俱往矣，数风流人物，还看今朝。
+        </p>
+</div>
+<div class="响应式布局"><h2>春望</h2>
+    国破山河在，城春草木深。
+    感时花溅泪，恨别鸟惊心。
+    烽火连三月，家书抵万金。
+    白头搔更短，浑欲不胜簪。
+</div>
+<div class="响应式布局"><h2><b>命名方式可以为中文,有点秀</b></h2></div>
+<div class="响应式布局">
+        <h2 style="padding: 20px;">江雪</h2>
+        <p style="padding: 20px;">千山鸟飞绝，万径人踪灭。
+                孤舟蓑笠翁，独钓寒江雪。
+            </p>
+    </div>
+<iframe name="内部打开" src="http://amor.spem.site/" frameborder="0" width="100%" height="500px"></iframe>
+<p><a href="http://baidu.com/" target="内部打开">我想打开百度</a></p>
+<p><a href="http://amor.spem.site/" target="内部打开">我想回到博客</a></p>
+<b>今天就先到这里了,明天继续,啦啦啦</b>
+</body>
+</html>
