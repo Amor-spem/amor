@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第六天</title>
+    <style>
+        pre{
+            padding: 20px;
+            background-color: rgb(212, 212, 212);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.4;
+            border: 1px dotted rgb(0, 0, 0);
+            margin: 10px;
+            width: auto;
+        }
+        strong  {
+            color: red;
+        }
+        .red {
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <b>CSS</b>
+        <p>css是层叠样式表的缩写 <br>
+        样式定义应该如何显示HTML元素 <br>
+        样式通常存储在样式表中
+        主要作用是解决内容与表现分离的问题 <br>
+        外部样式表一般储存在 css文件内 <br>
+        CSS会继承父元素的样式 </p>
+        <br>
+        <b>css样式表的次序</b>
+        <ol>
+            <li>内联样式表</li>
+            <li>内部样式表</li>
+            <li>外部样式表</li>
+            <li>浏览器缺省样式表</li>
+        </ol>
+        <b>CSS语法</b>
+        <p>CSS 规则由两个主要部分构成 : 选择器,以及一条或者多条声明. <br>
+        同样的, 选择器可以同时选择多个对象,用逗号隔开.</p>
+        <pre>selector { declaration1; declaration2; ... declarationN }</pre>
+        <p>
+            选择器--选择需要改变HTML的元素<br>
+            声明--由一个属性和一个值组成 每个属性有一个值. 属性和值被冒号分开.<br>
+        </p>
+        <pre>selector { property : value}</pre>
+        <pre>h1 { color:red; font-size:14px; }</pre>
+        <img src="https://i.imgur.com/MmBhcMW.png" width="500" alt="">
+        <br>
+        <b>回字有四种写法,你知道吗? 值也有不同的写法和单位</b>
+        <ul>
+            <li>直接写对应的英文 例如:red</li>
+            <li>十六进制颜色值 例如:#FF0000</li>
+            <li>我们也可以缩写 例如:#F00</li>
+            <li>也可以写RGB色值 例如:rgb(255,0,0)</li>
+            <li>或者百分比RGB 例如:rgb(100%,0%,0%)</li>
+        </ul>
+        <p>
+            派生选择器可实现在不添加class或id的情况下,对多层嵌套的元素的准确定位. <br>
+            id选择器可以准确的定位标记特定id的元素. id 选择器以"#"来定义 例如:#name {color:red;} <br>
+            id选择器可以与派生选择器结合使用 例如:(#sidebar p {color: red;} ) <br>
+            <strong>注意:id选择器可多次使用,但同一个文档内,id的属性只能出现一次!</strong>
+            <br>
+            类选择器,在css中是一个点号显示. 例如:
+            <pre><strong>.center</strong> {text-align: center }</pre>
+            同样类选择器也可作为派生选择器使用. <br>
+            <strong >注意:类的名字第一个字符不允许为数字</strong>
+            css属性选择器...(选择器真多...) 例如:<br> 
+            <pre>input [typle= "text"]</pre>
+            对于没有class和id的表单特别适用.
+        </p>
+        <ul>
+            <li>外部样式表</li>
+            <li>内部样式表</li>
+            <li>内联样式表</li>
+            <li class="red">
+                多重样式,属性值会有继承性,
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>

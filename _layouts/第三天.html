@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第三天</title>
+</head>
+<body>
+    <b>输入类型text</b><br>
+    <form action="https://www.w3school.com.cn/demo/demo_form.asp">
+    名称: <br>
+    <input type="text" name="名称" id="">
+    <br>
+    批号: <br>
+    <input type="text" name="批号" id="">
+    <br><br>
+    <input type="submit" name="" id="">
+    </form>
+    <b>输入类型:password</b><br>
+    <form action="">
+        User nmae: <br>
+        <input type="text">
+        <br>
+        User password: <br>
+        <input type="password" name="pws" id="">
+        <br><br>
+        <input type="submit" name="" id=""> <br>
+        输入密码会用✳号代替
+    </form>
+
+    <form action="https://www.w3school.com.cn/demo/demo_form.asp">
+        First name: <br>
+        <input type="text" name="firstname" value="xiao">
+        <br>
+        Last name: <br>
+        <input type="text" name="Lastname" value="mei">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <form action="https://www.w3school.com.cn/demo/demo_form.asp">
+        <input type="radio" name="sex" value="male" id="">Male
+        <br>
+        <input type="radio" name="sex" value="female" id="" checked>Female
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <br>
+    <form action="">
+        <input type="checkbox" name="vehicle" value="Bike" id="">I have a bike
+        <br>
+        <input type="checkbox" name="vehicle" value="Car" id="">I have a Car
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+    <br>
+    <p>
+        根据浏览器支持：<br>
+        数值约束会应用到输入字段中。
+    </p>
+    <form action="">
+        只能输入1-10之间的数字 例如: <br>
+        <input type="number" name="quantity" min="1" max="10">
+        <input type="submit" name="" id="">
+        <br><br>
+        还可以限制步数 例如: <br>
+        <input type="number" name="points" min="0" max="100" step="10" value="30" id="">
+        <input type="submit">
+    </form>
+    <br>
+    <b>输入日期类型</b>
+    <form action="">
+        生日:
+        <input type="date" name="bday" id="">
+        <input type="submit" name="" id=""><br>
+        依然可以用min 和max 来限制日期的范围
+        <br><br>
+        如果是month类型,则只会提供月和年的输入选择<br>
+        鸦片战争的月份:
+        <input type="month" name="wu" id="">
+        <input type="submit" name="" id="">
+        <br><br>
+        而如果是week类型的话,则会提供年和周的输入选择<br>
+        例如:<input type="week" name="year_week" id="">
+        <input type="submit" name="" id="">
+        <br><br>
+        time标签会提供时间的选择
+        <br>
+        例如:
+        <input type="time" name="user_time" id="">
+        <input type="submit">
+    </form>
+    <br>
+    <b>输入颜色类型</b>
+    <form action="">
+        <b>你最喜欢的颜色</b>
+        <input type="color" name="favcolor" id="" value="#ffff00">
+        <input type="submit" name="" id="">
+    </form>
+    <br>
+    <b>滑块输入类型</b>
+    <form action="https://www.w3school.com.cn/demo/demo_form.asp" method="GET">
+        数值:
+        <input type="range" name="points" id="" min="0" max="100" value="69">
+        <input type="submit" name="" id=""><br>
+        同样,这里依然可以用 min max step value 来限制范围 步数 和默认值
+    </form>
+    <b>输入邮件类型</b>
+    <form action="">
+        E-mail:
+        <input type="email" name="" id="">
+        <input type="submit" name="" id="">
+    </form>
+    <br>
+    <b>此外还有用于搜索字段的search类型 <br>
+    用于电话号码输入的tel类型 <br>
+    用于输入网址的url类型</b>
+    <br><br>
+    <b>readonly属性可以规定只读字段(readonly属性不需要值,它等同于 readonly="readonly"。) <br>
+    disabled属性则规定禁用输入字段 同上也不需要值 <br>
+    size属性规定了输入字段的尺寸 <br>
+    maxlength属性规定输入字段的最大长度</b>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第四天</title>
+    <style type="text/css">
+        #div1, #div2
+        {float:left; width:300px; height:300px; margin:10px;padding:10px;border:1px solid #aaaaaa;}
+    </style>
+
+    <script type="text/javascript">
+    function allowDrop(ev)
+    {
+    ev.preventDefault();
+    }
+
+    function drag(ev)
+    {
+    ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev)
+    {
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+    
+</head>
+<body>
+    <h2>画布</h2>
+    <b>创建Canvas 元素 用来绘制图形 </b>
+    <p>Canvas本身不具有绘图功能,需要javascript内部完成.</p>
+    <canvas id="mycanvas" width="200" height="100"></canvas>
+    <script type="text/javascript">
+    var c = document.getElementById("mycanvas");
+    var cxt = c.getContext("2d");
+    cxt.fillStyle = '#FF0000';
+    cxt.fillRect(0,0,150,75);
+    </script>
+    <br>
+
+    <b>绘制线 一颗五角星</b><br>
+    <canvas id="mycanvas2" width="400" height="200" style="border: 1px solid #c3c3c3;" >
+    </canvas>
+
+    <script type="text/javascript">
+
+    var c2=document.getElementById("mycanvas2");
+    var cxt2=c2.getContext("2d");
+    cxt2.moveTo(200,20);
+    cxt2.lineTo(100,180);
+    cxt2.lineTo(300,80);
+    cxt2.lineTo(100,80);
+    cxt2.lineTo(300,180);
+    cxt2.lineTo(200,20);
+    cxt2.fillStyle="#FF0000";
+    cxt2.fill();
+    cxt2.stroke();
+    </script>
+<br>
+    <b>绘制一个圆</b>
+    <br>
+    <canvas id="yuan" width="400" height="200" style="border: 1px solid #c3c3c3;"></canvas>
+    <script type="text/javascript">
+    var y=document.getElementById("yuan");
+    var yq=y.getContext("2d");
+    yq.fillStyle="#FF0000";
+    yq.beginPath();
+    yq.arc(200,100,50,0,Math.PI*2,true);
+    yq.closePath();
+    yq.fill();
+    </script>
+<br>
+    <b>绘制渐变颜色</b><br>
+    <canvas id="jianbian" width="400" height="200" style="border: 1px solid #c3c3c3;"></canvas>
+    <script type="text/javascript">
+
+    
+    var d=document.getElementById("jianbian");
+    var j=d.getContext("2d");
+    var jb=j.createLinearGradient(0,0,400,200);
+    jb.addColorStop(0,"#FF0000");
+    jb.addColorStop(1,"#00FF00");
+    j.fillStyle=jb;
+    j.fillRect(0,0,400,200);
+    </script>
+    <h2>SVG</h2>
+    <b>什么是SVG</b>
+    <p>SVG指可伸缩矢量图形 <br>
+    SVG用于定义网络基于矢量的图形<br>
+    SVG使用XML格式定义图形<br>
+    SVG图像放大缩小不会有质量损失<br>
+    SVG是万维网联盟标准<br>
+    </p>
+    <b>SVG的优势</b>
+    <P>
+        SVG图像可以通过文本编辑器来创建和修改<br>
+        SVG可以被搜索,索引,脚本化或压缩<br>
+        SVG是可伸缩的???(不是很懂) <br>
+        SVG图像可以在任何分辨率被高质量打印<br>
+        SVG图像可以在质量不下降的情况下放大
+    </P>
+    <b>好像很厉害的样子,我画了一个,但是还是没搞懂原理,好像需要看XML的知识<br>
+    相对于上面那个我觉得好像简单不少....
+    </b><br>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="200">
+        <polygon points="100,10 40,180 190,60 10,60 160,180"
+        style="fill: yellow;stroke: violet;stroke-width: 3;fill-rule: evenodd;" />
+    </svg>
+    <br>
+    <h2>媒体播放</h2>
+    <embed height="100" width="200" src="http://m10.music.126.net/20191208195535/38a8809e4b40f7f0b54418274536f665/ymusic/1224/63ab/42de/7affefeac1142c7eec1f7b44452c3ea6.mp3" type="">
+    <br>
+    <object height="100" data="http://m10.music.126.net/20191208195535/38a8809e4b40f7f0b54418274536f665/ymusic/1224/63ab/42de/7affefeac1142c7eec1f7b44452c3ea6.mp3" type=""></object>
+    <br>
+    <audio controls>
+        <source src="http://m10.music.126.net/20191208195535/38a8809e4b40f7f0b54418274536f665/ymusic/1224/63ab/42de/7affefeac1142c7eec1f7b44452c3ea6.mp3" />
+    </audio>
+    <br>
+    <b>直接链接到一个音乐</b>
+    <p><a href="http://m10.music.126.net/20191208195535/38a8809e4b40f7f0b54418274536f665/ymusic/1224/63ab/42de/7affefeac1142c7eec1f7b44452c3ea6.mp3">点击播放音乐</a></p>
+    <br>
+    <p>视频...哔哩哔哩//= =</p>
+    <b>来回拖动...</b><br>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">11
+        <img src="https://pic.superbed.cn/item/5debb76bf1f6f81c5051f178.png" draggable="true" ondragstart="drag(event)" id="drag1" />
+      </div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">1111
+      </div>
+</body>
+</html>
