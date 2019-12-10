@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第六天</title>
+    <style>
+        table, th, td{
+            border: 1.5px solid rgb(99, 168, 20);
+            border-collapse: collapse;
+            width: 600px;
+        }
+        th{
+            background-color: rgb(139, 212, 20);
+            color: white;
+            font-size: 18px;
+        }
+        td{
+            vertical-align:middle;
+            text-align:center;
+        }
+        .green{
+            background-color: rgb(228, 248, 207);
+        }
+        .轮廓{
+            border:violet solid ;
+            outline: thistle dotted thick;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CSS背景</h2>
+        <p>background-color属性为元素设置背景色. <br>
+        可以为所有元素设置背景色, 这包括body 一直到em 和a 等行内元素. <br>
+        background-color 不能继承, 默认值就是透明. <br>
+        对于下面的背景图样同样无法被继承. <br></p>
+        <p>background-image属性可以为元素设置背景. <br>
+        background-image 默认属性是none <br>
+        如果要设置一个背景图像,必须为这个属性设定一个URL值,例如: <br>
+        body {background-image: url(/i/image.gif);} <br>
+        </p>
+        <p>背景重复 <br>
+        background-repeat 属性可以让图像在水平垂直方向都平铺 <br>
+        repeat-x 和repeat-y 分别在水平或者垂直方向上重复, no-repeat 不允许重复</p>
+        <p>背景定位 <br>
+        利用background-position 可以改变图像在背景中的位置 <br>
+        可以使用关键字组合 长度值 百分数值 <br></p>
+        <p>背景关联 <br>
+        background-attachment 属性防止背景图和文档一起滚动 <br> 
+        当值设置为fixed 相对于用户是固定的 它的默认属性是scrool 会随文档移动</p>
+        <ul>
+            <li><strong>background</strong>简写属性</li>
+            <li><strong>background-attachment</strong>背景图像是否固定或者随页面的其余部分滚动</li>
+            <li><strong>background-color</strong>设置背景颜色</li>
+            <li><strong>background-image</strong>设置背景图片</li>
+            <li><strong>background-position</strong>设置背景图片起始位置</li>
+            <li><strong>background-repeat</strong>设置图像重复方式</li>
+        </ul>
+    </header>
+    <header>
+        <h2>CSS文本属性</h2>
+        <ul>
+            <li><strong>color</strong>设置文本颜色</li>
+            <li><strong>direction</strong>设置文本方向</li>
+            <li><strong>line-height</strong>设置行高</li>
+            <li><strong>letter-spacing</strong>设置字符间距</li>
+            <li><strong>text-align</strong>对其元素中的文本</li>
+            <li><strong>text-decoration</strong>向文本添加修饰</li>
+            <li><strong>text-indent</strong>缩进元素文本的首行</li>
+            <li><strong>text-shadow</strong>设置文本阴影</li>
+            <li><strong>text-transform</strong>控制元素中的字母</li>
+            <li><strong>unicode-bidi</strong>设置文本方向</li>
+            <li><strong>white-space</strong>设置元素中空白的处理方式</li>
+            <li><strong>word-spacing</strong>设置字间距</li>
+        </ul>
+        <ul>
+            <h2>CSS字体属性</h2>
+            <li><strong>font</strong>简写属性</li>
+            <li><strong>font-family</strong>设置字体系列</li>
+            <li><strong>font-size</strong>设置字体尺寸</li>
+            <li><strong>font-size-adjust</strong>当首选字体不可用时,对替换字体智能缩放</li>
+            <li><strong>font-stretch</strong>水平拉伸</li>
+            <li><strong>font-style</strong>设置字体风格</li>
+            <li><strong>font-variant</strong>以小型大写字体或正常字体显示文本</li>
+            <li><strong>font-weigt</strong>字体粗细</li>
+        </ul>
+        <ul>
+            <h2>CSS链接样式</h2>
+            <li><strong>a:link</strong>普通的,未被访问的</li>
+            <li><strong>a:visited</strong>用户已访问链接</li>
+            <li><strong>a:hover</strong>鼠标指针位于链接上方时</li>
+            <li><strong>a:active</strong>链接被点击时</li>
+            <li><strong>{color:red}</strong>设置颜色</li>
+            <li><strong>{text-decoration}</strong>设置装饰</li>
+            <li><strong>{background-color}</strong>设置背景色</li>
+            例如: <strong>a:link {color: red} </strong>设置未被访问的链接为红色
+        </ul>
+        <ul>
+            <h2>CSS列表</h2>
+            <li><strong>list-style</strong>简写属性</li>
+            <li><strong>list-style-image</strong>设置图像为列表标志</li>
+            <li><strong>list-style-position</strong>设置列表项标志的位置</li>
+            <li><strong>list-style-type</strong>设置列表项标志类型</li>
+            例如: <br>
+             <strong>li {list-style : url(image\arrow-1293400.svg) square inside }</strong>
+        </ul>
+        <hr>
+        <h2>表格</h2>
+        <table>
+            <th>属性</th>
+            <th>描述</th>
+            <tr>
+                <td>border-collapse</td>
+                <td>设置是否把表格边框合并</td>
+            </tr>
+            <tr class="green">
+                <td>border-spacing</td>
+                <td>设置单元格边框距离</td>
+            </tr>
+            <tr>
+                <td>caption-cells</td>
+                <td>设置表格标题位置</td>
+            </tr>
+            <tr class="green">
+                <td>caption-cells</td>
+                <td>设置是否显示表格中的空单元格</td>
+            </tr>
+            <tr>
+                <td>table-layout</td>
+                <td>设置显示单元,行和列的算法</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>轮廓</h2>
+        <table>
+            <th>属性</th>
+            <th>描述</th>
+            <th>栗子</th>
+            <tr>
+                <td>outlinr</td>
+                <td>简化书写</td>
+                <td class="轮廓" rowspan="4">outline: thistle dotted thick;</td>
+            </tr>
+            <tr>
+                <td>outline-color</td>
+                <td>设置轮廓颜色</td>
+            </tr>
+            <tr>
+                <td>outline-style</td>
+                <td>设置轮廓样式</td>
+            </tr>
+            <tr>
+                <td>outline-width</td>
+                <td>设置轮廓宽度</td>
+            </tr>
+        </table>
+    </header>
+    <div style="background-color: teal; height: 500px; width: 400px; margin: 100px; padding: 50px; border:red solid">
+
+    </div>
+</body>
+</html>
