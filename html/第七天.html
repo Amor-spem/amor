@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .margin{
+            margin: 0 ;
+            padding: 0px;
+            /* 块居中 */
+            background-color: brown;
+            text-align: center;
+            height: 100px;
+        }
+        .cs{
+            width: 300px;
+            background-color: chartreuse;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .cs2{
+            background-color: coral;
+            width: 300px;
+            margin: 0 auto;
+            float:right
+        }
+
+        
+        p{
+            text-indent: 20px;
+            background-color: rgb(153, 185, 245);
+            width: 500px;
+        }
+        table, th, td{
+            border: 1.5px solid rgb(99, 168, 20);
+            border-collapse: collapse;
+            width: 700px;
+        }
+        th{
+            background-color: rgb(139, 212, 20);
+            color: white;
+            font-size: 18px;
+        }
+        td{
+            vertical-align:middle;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="margin">
+        <div class="cs">margin</div>
+        <div class="cs">margin</div>
+        <div class="cs2">通过margin确实可以让它看起来居中了,但是我想在侧边填充块</div>
+    </div>
+    <section>
+        <p>还是不太明白如何居中块元素了,难道要用 float 来做?, 准确来说这看起来确实居中了,但是这是利用外边距进行的居中, 并非我想要的.等会再看看布局吧.</p>
+        <p>margin最多可以包括4个值</p>
+        <p>我服了,一个大括号折腾我十分钟....</p>
+        <table>
+            <th>margin</th>
+            <th>上</th>
+            <th>右</th>
+            <th>下</th>
+            <th>左</th>
+            <tr>
+                <td>一个参数</td>
+                <td>800px</td>
+                <td colspan="3">同上</td>
+            </tr>
+            <tr>
+                <td>二个参数</td>
+                <td>800px</td>
+                <td>1000px</td>
+                <td>同上</td>
+                <td>同右</td>
+            </tr>
+            <tr>
+                    <td>三个参数</td>
+                    <td>800px</td>
+                    <td>1000px</td>
+                    <td>600px</td>
+                    <td>同右</td>
+            </tr>
+            <tr>
+                    <td>三个参数</td>
+                    <td>800px</td>
+                    <td>1000px</td>
+                    <td>600px</td>
+                    <td>700px</td>                
+            </tr>
+        </table>
+        <p>外边距合并,多个元素的外边会相互重叠,最终宽度以数据较大的为最终宽度 <br>
+            当一个空元素没有边框或者填充的情况下,上下边距会出现合并的情况 <br>
+            这样的设定可以保证多个元素的间隔相等 </p>
+    </section>
+    <article>
+        <strong>CSS定位</strong>
+        <p class="kuai">css的定位分为绝对定位和相对定位
+        所有的元素都是框,div h1这类块级元素被称为块框
+        span 和strong 这类行内元素被称为行内框. 还可以通过display来
+        改变生成框的类型,当些文本被直接添加到块级元素的开头时,即使没有定义段落,
+        也会被当作段落来处理.被称为无名框. <br>
+        css中块级元素由上到下排列 <br>
+        <strong>行框</strong>....越看越迷糊. <br>
+        <strong>相对定位</strong>相对定位,故名思意,以原本位置坐为移动参考对象 <br>
+        <strong>决对定位</strong>以祖先位置作为移动的参考对象 <br>
+        <strong>浮动</strong>浮动可以向左或向右移动,直到屏幕边缘</p>
+        
+    </article>
+    <article>
+        <p><strong>CSS选择器</strong>
+        css的选择器真的太多了! 太多了= = <br>
+        眼花缭乱,目不暇接. 我觉得目前的我根本用不了那么多,不过我还是都看了一遍
+        知道个大概用法,以后能想到再回来找吧... 
+        <br>
+        id选择器,元素选择器还有类选择器,前面都学过了. <br>
+        新增的有,后代选择器,子元素选择器,属性选择器,相邻兄弟选择器,伪类和伪元素 <br>
+        分组,选择器和声明都可以进行分组复用 <br>
+        选择器可以多个选择器搭配使用,我觉得其本质就是在不停的缩小集合,直到取到你
+        需要的集合就好了 <br>
+        类选择器和id选择器都是区分大小写的的!
+        </p>
+        <table>
+            <h2>伪类</h2>
+            <th>属性</th>
+            <th>描述</th>
+            <tr>
+                <td>:active</td>
+                <td>向被激活的元素添加样式。</td>
+            </tr>
+            <tr>
+                <td>:focus</td>
+                <td>向拥有键盘输入焦点的元素添加样式。</td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>当鼠标悬浮在元素上方时，向元素添加样式。</td>
+            </tr>
+            <tr>
+                <td>:link</td>
+                <td>向未被访问的链接添加样式。</td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>向已被访问的链接添加样式。</td>
+            </tr>
+            <tr>
+                <td>:first-child</td>
+                <td>向元素的第一个子元素添加样式。</td>
+            </tr>
+            <tr>
+                <td>:lang</td>
+                <td>向带有指定 lang 属性的元素添加样式。</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table>
+            <h2>伪元素</h2>
+            <th>属性</th>
+            <th>描述</th>
+            <tr>
+                <td>:first-letter</td>
+                <td>向文本的第一个字母添加特殊样式。</td>
+            </tr>
+            <tr>
+                <td>:first-line</td>
+                <td>向文本的首行添加特殊样式。</td>
+            </tr>
+            <tr>
+                <td>:before</td>
+                <td>在元素之前添加内容。</td>
+            </tr>
+            <tr>
+                <td>:after</td>
+                <td>在元素之后添加内容。</td>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>
