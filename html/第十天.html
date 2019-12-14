@@ -8,15 +8,44 @@
 </head>
 <body>
     <div>
-    <p id="demo">Javascript能够改变网页内容</p>
+    <h3 id="demo">Javascript能够改变网页内容</h3>
     <button type="button" onclick="document.getElementById('demo').innerHTML = '修改内容成功!'">单机改变上面内容</button>
     <p>Javascript可以同时接受双引号和单引号!</p>
     </div>
     <div>
         <h3>JavaScript可以改变HTML的属性</h3>
         <p>例如</p>
-        <img id="light" src="/image/OffLight.gif" alt="无法显示?">
+        <img id="light" src="/image/OffLight.gif" alt="无法显示?"> <br>
         <button type="button" onclick="document.getElementById('light').src='/image/OnLight.gif'">点击开灯</button>
+        <button type="button" onclick="document.getElementById('light').src='/image/OffLight.gif'">点击开灯</button>
+    </div>
+    <div>
+        <h3>JavaScript可以改变元素的样式</h3>
+        <p id="css">点击下面按钮改变我</p>
+        <button type="button" onclick="document.getElementById('css').style.color='#FF0000'">点击我改变它~~~</button>
+    </div>
+    <div>
+        <h3>JavaScript还可以显示和隐藏元素</h3>
+        <p id="display">通过display样式来隐藏和显示元素,实际上也是改变元素样式</p>
+        <button type="button" onclick="document.getElementById('display').style.display='none'">点击隐藏上面文字</button>
+        <button type="button" onclick="document.getElementById('display').style.display='block'">点击显示被你隐藏的文字</button>
+    </div>
+    <div>
+        <li>在HTML中,JavaScript代码必须位于script 标签内, 这样可以实现代码的分离和外置</li>
+        <li>JavaScript函数是一种JavaScript代码块,可以在被调用时执行命令</li>
+        <li>能够在JavaScript中放置任意数量的脚本,body和head中都可以放置</li>
+        <li>将脚本文件放置在body的底部,可以改善加载显示的速度</li>
+        <li>外部脚本用 script src='myscript.js' /script 来导入 </li>
+        <li>外部脚本不能包含script标签</li>
+    </div>
+    <div>
+        <p id="myfunction">点击试一试</p>
+        <button type="button" onclick="myfunction()">点击我修改上面</button>
+        <script>
+            function myfunction(){
+                document.getElementById('myfunction').innerHTML='修改为 什么呢?'
+            }
+        </script>
     </div>
 </body>
 </html>
