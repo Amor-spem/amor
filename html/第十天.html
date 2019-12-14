@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p id="demo">Javascript能够改变网页内容</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = '修改内容成功!'">单机改变上面内容</button>
+    <p>Javascript可以同时接受双引号和单引号!</p>
+    </div>
+    <div>
+        <h3>JavaScript可以改变HTML的属性</h3>
+        <p>例如</p>
+        <img id="light" src="/image/OffLight.gif" alt="无法显示?">
+        <button type="button" onclick="document.getElementById('light').src='/image/OnLight.gif'">点击开灯</button>
+    </div>
+</body>
+</html>
