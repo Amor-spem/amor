@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第十二天</title>
+    <style>
+        table,th,tr,td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <p>昨天又丢了~ 昨天我女朋友过生日.所以当然要陪女朋友了~哈哈</p>
+    <h3>JavaScript算数运算符</h3>
+    <p>Java script可以运行加减乘除, 幂, 系数,递增,递减运算 <br>
+    加减乘除+-*/ 幂** 系数%(返回的是除法的余数) 递增++ 递减--</p>
+    <h3>JavaScript数据类型</h3>
+    <pre>
+        var a = 1;     //数字
+        var a = "1";   //字符串
+        var a = ["1" , "b" , "c"];      //数组
+        var a ={firstname:"bill" , lastname:"gates"};       //对象
+    </pre>
+    <p>typeof来返回变量类型 <br>
+    undefined是没有值的变量吗,值是undefined,typeof也返回undefined <br>
+    任何变量都可以通过undefined进行清空. <br>
+    空值,空值与undefined不一样,空值既有值,也有类型. <br>
+    </p>
+    <h3>Java script函数</h3>
+    <p>JavaScript函数通过function关键字进行定义, 其后是函数名和括号, <br>
+         圆括号内可包含由逗号分割的参数,花括号内包含要执行的代码. <br>
+        在函数中,参数是局部变量.</p>
+    <p>函数代码将在其他代码调用该函数时执行.</p>
+    <p>但函数到达return时,函数将停止运行.</p>
+    <p id="hanshu">栗子</p>
+    <p id="lizi2">栗子2</p>
+    <script>
+        function tocelsius(f) {
+            return (5/9)*(f-32);
+        }
+        function myfunction() {
+            document.getElementById("hanshu").innerHTML = tocelsius(90);
+        }
+        document.getElementById("lizi2").innerHTML = tocelsius
+    </script>
+    <button type="button" onclick="myfunction()">点击我将90华氏度赚为摄氏度</button>
+    <p>调用函数时添加括号会引用函数结果,不加括号会引用函数对象</p>
+    <p>JavaScript函数中声明的变量会成为函数的局部变量,局部变量只能在函数内访问,所以可以在不通函数内使用相同的函数名称</p>
+    <h3>JavaScript对象</h3>
+    <table>
+        <th>对象</th>
+        <th>属性</th>
+        <th>方法</th>
+        <tr>
+            <td><img width="200" src="https://ae01.alicdn.com/kf/H52e03a7faffd4f06a47a91f027945766X.jpg" alt=""></td>
+            <td>car.name=porsche <br>
+            car.name=911 <br>
+            car.length=4499mm <br> 
+            car.color=white</td>
+            <td>
+                car.start() <br>
+                car.drive() <br>
+                car.brake() <br>
+                car.stop() <br>
+            </td>
+        </tr>
+    </table>
+    <p>
+        javascript对象是被命名值的容器 <br>
+        值对被称为属性 <br>
+        对象可以有方法,是在对象上执行的动作,以函数定义的方式被储存在属性中. <br>
+        this引用该函数的拥有者. <br>
+        能够以多种方式来访问属性. <br>
+        objectname.propertyname <br>
+        或者objectname["propertyname"] <br>
+        访问对象方法的方式.  <br>
+        objectname.methodname() <br>
+        如果不加括号则返回函数定义.
+    </p>
+    <h3>HTML事件</h3>
+    <p>就是发生什么事,作出什么反应. 以下列举部分</p>
+    <table>
+        <th>事件</th>
+        <th>描述</th>
+        <tr>
+            <td>onchange</td>
+            <td>HTML袁术已被改变</td>
+        </tr>
+        <tr>
+            <td>onclick</td>
+            <td>点击元素</td>
+        </tr>
+        <tr>
+            <td>onmouseover</td>
+            <td>获得鼠标焦点</td>
+        </tr>
+        <tr>
+            <td>onmouseout</td>
+            <td>失去鼠标焦点</td>
+        </tr>
+        <tr>
+            <td>onkeydown</td>
+            <td>按下键盘</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>浏览器加载完成界面</td>
+        </tr>
+    </table>
+    <h3>字符串</h3>
+    <p>
+        内建length可返回字符串的长度 <br>
+        特殊字符可以用 \ 转义 <br>
+        也可以用 \ 在字符串中换行 <br>
+        注意: \ 无法在代码中换行!
+    </p>
+</body>
+</html>
