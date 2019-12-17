@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第十三天</title>
+</head>
+<body>
+    <div>
+        <h3>字符串的方法和属性</h3>
+        <li>lenght返回字符串的长度</li>
+        <li>indexOf()返回字符串中指定文本首次出现的位置索引</li>
+        <li>lastIndexOf()返回指定文本在字符串中最后一次出现的位置索引</li>
+        <li>如果未找到都返回-1 查到位置编号从0开始 都接受做为检索起始参数的第二个参数</li>
+        <li>aearch()也可以检索特定字符串并返回位置</li>
+        <strong>indexOf()和search()看起来是一样的,可拓展性不同. search()无法设置第二个参数;indexOf()不可以使用正则表达式</strong>
+        <li>slice()提取字符串的某个部分并返回</li>
+        <li>参数值可以为负数</li>
+        <li>可以设置两个参数,开始位置和结束位置 如舍弃第二个参数,则返回剩余部分</li>
+        <li>substring()类似slice()但无法接受负数</li>
+        <li>substr()类似slice()但第二个参数是截取长度,如省略,则截取剩余长度.</li>
+        <li>replace()方法可以用一个值替换字符串中第一个匹配的值</li>
+        <strong>replace()不会改变原有字符串,会返回一个修改过的新字符串 默认对大小写敏感</strong> <br>
+        <strong id="dx">example可以用正则表达式/i来使大小写不敏感 和/g来全局搜索 exAmPle</strong> <br>
+        <button onclick="daxiao()">点击我修改上面example</button>
+        <li>toUpperCase()把字符串转为大写</li>
+        <li>toLowerCase()把字符串转为小写</li>
+        <li>concat()连接两个或多个字符串 等效于加法运算</li>
+        <li>trim()返回值会把字符串两端的空格清除</li>
+        <li>charAt()返回字符串中指定下标的字符串</li>
+        <li>charCodeAt()返回字符串指定字符的unicode编码</li>
+        <strong>以上两种方法是只读的,无法写入修改字符串</strong>
+        <li>split()将字符串转化为数组. 参数可指定分隔符</li>
+        <li>toString()以字符返回数值 可用于任何类型的数字</li>
+        <li>toExponential()返回已被四舍五入并使用指数计数法的字符串值</li>
+        <li>toFixed() 返回字符串值，它包含了指定位数小数的数字</li>
+        <li>toPrecision() 返回字符串值，它包含了指定长度的数字</li>
+        <li>valueOf() 以数值返回数值</li>
+        <h3>数字</h3>
+        <li>Number()返回数字,由其参数转换而来</li>
+        <li>parseFloat()解析其参数并返回浮点数</li>
+        <li>parseIn()解析其参数并返回整数</li>
+        <p id="shuzi">返回1970年1月1日至今的毫秒数</p>
+        <button onclick="shuzi()">点击返回1970年1月1日至今的毫秒数</button>
+        <li>parseInt() 解析一段字符串并返回数值。允许空格。只返回首个数字</li>
+        <li>parseFloat() 解析一段字符串并返回数值。允许空格。只返回首个数字</li>
+        <li>MAX_VALUE返回JavaScript中可能最大的数值</li>
+        <li>MIN_VALUE返回JavaScript中可能最小的值</li>
+        <li>NEGATIVE_INFINITY表示负的无穷大(溢出返回)</li>
+        <li>POSITIVE_INFINITY表示无穷大(溢出返回)</li>
+        <li>NaN表示非数字值</li>
+        <h3>数组</h3>
+        <p>JavaScript中数组用于在单一变量中储存多个值 空格和折行并不重要 声明可横跨多行 最后一个元素不要添加逗号</p>
+        <p>使用下标可以访问和修改数组中的元素,通过数组名可以访问完整数组 数组是一个特殊的对象</p>
+        <li>length属性返回数组的长度</li>
+        <li>for函数和Array.foreach()函数可以遍历数组元素</li>
+        <p id="bianli">栗子</p>
+        <button onclick="bianli()">点击我吃水果</button>
+        <li>push()向数组添加新元素</li>
+        <li>length()也可以向数组添加新元素</li>
+        <strong>添加最高索引元素可以再数组中创建未定义的"洞"</strong>
+        <button onclick="添加水果()">点击我再吃一颗橘子</button>
+        <pre style="color: red; background-color: rgb(94, 94, 94);">
+            <strong>数组和对象的区别</strong>
+            在 JavaScript 中，数组使用数字索引。
+            在 JavaScript 中，对象使用命名索引。
+            数组是特殊类型的对象，具有数字索引。
+            <strong>何时使用数组，何时使用对象？</strong>
+            JavaScript 不支持关联数组
+            如果希望元素名为字符串（文本）则应该使用对象。
+            如果希望元素名为数字则应该使用数组
+        </pre>
+        <li>toString()和join()都可以将数组转化为字符串,后者可设定分隔符</li>
+        <li>Pop()可以删除最后一个元素,返回被删除的元素</li>
+        <li>push()在尾部推入元素,返回修改后的数组长度</li>
+        <li>shift()删除首个元素,并使其他元素向前位移,返回删除元素</li>
+        <li>unshift()在开头推入一个元素,并使其他元素后移,返回新数组长度</li>
+        <li>使用数组索引可以直接访问元素或者修改元素</li>
+        <li>delete删除元素会在数组中留下空洞,可以使用pop()或者shift()取代.</li>
+        <strong>那删除中间元素怎么办? 下面就是方法</strong>
+        <li>splice()可向数组内添加新项,前两个参数对应添加位置和删除元素,其余参数定义新项</li>
+        <li>所以我们可以使用splice()在数组中不留空洞的情况下删除元素项.</li>
+        <li>concat()拼接数组,并返回新数组</li>
+        <li>slice()数组切片,两个参数,起始位置和截至位置,返回新数组</li>
+        <li>sort()可以对数组进行排序</li>
+        <li>reverse()反转数组中的元素</li>
+        <strong>但无法对数字排序,但我们可以通过比值函数来修正 function(a,b){return a-b}</strong><br>
+        <strong>返回随机数类似 function(a,b),{return 0.5 - Math.random()} 其中Math.random会返回一个0到1的随机浮点数</strong><br>
+        <strong>虽然JavaScript没有直接提供查找最高值或者最低值的函数,当我们可以先排序,直接索引最高值和最低值</strong><br>
+        <strong>当然,这种方法效率很低. <br>
+            所以,我们可以使用Math.max.apply来查找数组中的最高值,Math.min.apply来查找最低值
+        </strong>
+        <pre>
+            <strong>当然我们也可以构建自己的函数来返回最大值或最小值</strong>
+            var max=[]                       //定义数组
+            function ArrayMax(arr) {         //定义函数
+                var len = max.lenght;        //获取函数长度
+                var max = -Infinity;         //设置初始最小比较值
+                while(len--){                //循环len递减,为0时条件判断为false
+                    if( arr[len]> max){      //当前值与最高值比较
+                        max = arr[len];      //当arr[len]大于max时,替换max的值
+                    }
+                }
+                return max;                  //返回最大值max
+            }
+        </pre>
+    </div>
+    <script>
+        function 添加水果(){
+            水果.push("橘子");
+            总量 = 水果.length;
+            文本 ="<ul>";
+            for(计数=0;计数<总量;计数++) {
+            文本 += "<li>"+水果[计数]+"</li>";
+            }
+            文本 += "</ul>";
+            document.getElementById("bianli").innerHTML=文本;
+        }
+        var 水果,文本,总量,计数;
+        水果 = ["火龙果","香蕉","橙子","草莓","葡萄"];
+        总量 = 水果.length;
+        文本 ="<ul>";
+        for(计数=0;计数<总量;计数++) {
+            文本 += "<li>"+水果[计数]+"</li>";
+        }
+        文本 += "</ul>";
+        function bianli(){document.getElementById("bianli").innerHTML=文本;}
+        function shuzi(){document.getElementById("shuzi").innerHTML=Number(new Date());}
+        function daxiao(){
+            var a = document.getElementById("dx").innerHTML;
+            var b = a.replace(/example/ig, "<p>例如</p>");
+            document.getElementById("dx").innerHTML=b;
+        }
+    </script>
+</body>
+</html>
