@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>数组迭代</h3>
+        <ul>
+            <li>Array.forEach()为每一个数组元素调用一次函数,能接受 项目值,项目索引,数组本身3个值</li>
+            <li>Array.map()对每个数组元素执行函数来创建新的数组.不会对没有值的元素执行.</li>
+            <li>Array.filter()为通过条件测试的元素生成一个新的数组.</li>
+            <li>Array.every()和上面一样???但是返回布尔值!!!!</li>
+            <li>Array.some()和上面一样....也返回布尔值???但是只要有一个值符合条件,就返回true</li>
+            <li>Array.reduce()为每一个元素执行一次函数并提供一个变量</li>
+            <li>Array.reduceRight()和上面一样,反方向调用</li>
+            <li>Array.indexOf()查找元素值并返回位置,可接受检索项目和开始位置两个函数</li>
+            <li>Array.lastIndexOf()与上面类似,但是是从尾部开始搜索</li>
+            <li>Array.find()返回符合测试条件的第一个元素值</li>
+            <li>Array.findIndex()返回符合测试条件的第一个元素索引</li>
+        </ul>
+        <h3>时间</h3>
+        <p id="NewTime">现在时间</p>
+        <button onclick="NewTime()">点击显示现在时间</button>
+        <ul>
+            <li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+            <li>6个数字指定年、月、日、小时、分钟、秒：</li>
+            <li>5个数字指定年、月、日、小时和分钟：</li>
+            <li>4个数字指定年、月、日和小时：</li>
+            <li>3个数字指定年、月和日：</li>
+            <li>2个数字指定年份和月份：</li>
+            <li>1个参数，则将其视为毫秒。</li>
+            <li>0个参数将使用当前时间创建全文本字符串</li>
+            <li>toUTCString()将日期转为UTC字符串</li>
+            <li>toDateString()转为更容易读的格式</li>
+            <li>getTime() 方法返回自 1970 年 1 月 1 日以来的毫秒数：</li>
+            <li>getFullYear() 方法以四位数字形式返回日期年份：</li>
+            <li>getMonth() 以数字（0-11）返回日期的月份：</li>
+            <li>getDate() 方法以数字（1-31）返回日期的日：</li>
+            <li>getHours() 方法以数字（0-23）返回日期的小时数：</li>
+            <li>getMinutes() 方法以数字（0-59）返回日期的分钟数：</li>
+            <li>getSeconds() 方法以数字（0-59）返回日期的秒数：</li>
+            <li>getMilliseconds() 方法以数字（0-999）返回日期的毫秒数：</li>
+            <li>getDay() 方法以数字（0-6）返回日期的星期名（weekday）：</li>
+            <li>setFullYear() 方法设置日期对象的年份。这个例子设置为 2020 年：</li>
+            <li>setFullYear() 方法可以选择设置月和日：</li>
+            <li>setMonth() 方法设置日期对象的月份（0-11）：</li>
+            <li>setDate() 方法设置日期对象的日（1-31）：</li>
+            <li>setDate() 方法也可用于将天数添加到日期：</li>
+            <li>setHours() 方法设置日期对象的小时（0-23）：</li>
+            <li>setMinutes() 方法设置日期对象的分钟（0-59）：</li>
+            <li>setSeconds() 方法设置日期对象的秒数（0-59）：</li>
+        </ul>
+        <h3>数学</h3>
+        <ul>
+            <li>Math.round(x) 的返回值是 x 四舍五入为最接近的整数：</li>
+            <li>Math.pow(x, y) 的返回值是 x 的 y 次幂：</li>
+            <li>Math.sqrt(x) 返回 x 的平方根：</li>
+            <li>Math.abs(x) 返回 x 的绝对（正）值：</li>
+            <li>Math.ceil(x) 的返回值是 x 上舍入最接近的整数：</li>
+            <li>Math.floor(x) 的返回值是 x 下舍入最接近的整数：</li>
+            <li>Math.sin(x) 返回角 x（以弧度计）的正弦（介于 -1 与 1 之间的值）。</li>
+            <li>Math.cos(x) 返回角 x（以弧度计）的余弦（介于 -1 与 1 之间的值）。</li>
+            <li>Math.min() 和 Math.max() 可用于查找参数列表中的最低或最高值：</li>
+            <li>Math.random() 返回介于 0（包括） 与 1（不包括） 之间的随机数：</li>
+            <li>........</li>
+        </ul>
+        <h3>逻辑</h3>
+        <ul>
+            <li>布尔值 true和false</li>
+            <li>具有真实值即为true</li>
+            <li>不具有真实值即为false</li>
+            <li>支持大于小于等于不等于大于等于小于等于所有比较符号</li>
+            <li>支持与&& 或|| 非! 逻辑运算符</li>
+            <li>条件三元运算符 语法: variablename = (condition) ? value1 : value2 </li>
+        </ul>
+        <h3>条件语句if...else...</h3>
+        <ul>
+            <li>使用 if 来规定要执行的代码块，如果指定条件为 true</li>
+            <li>使用 else 来规定要执行的代码块，如果相同的条件为 false</li>
+            <li>使用 else if 来规定要测试的新条件，如果第一个条件为 false</li>
+            <pre>
+if (条件 1) {
+    条件 1 为 true 时执行的代码块
+} else if (条件 2) {
+    条件 1 为 false 而条件 2 为 true 时执行的代码块
+    } else {
+    条件 1 和条件 2 同时为 false 时执行的代码块
+}
+            </pre>
+            <li>使用 switch 来规定多个被执行的备选代码块</li>
+            <li>计算wuitch表达式</li>
+            <li>表达式的值与每个case值比较,匹配则执行关联代码</li>
+            <li>使用break可以中止测试执行.</li>
+            <li>可以多个case共享代码块.</li>
+            <li>suitch使用严格比较模式 === </li>
+            <pre>
+switch(表达式) {
+    case n:
+        代码块
+        break;
+    case n:
+        代码块
+        break;
+    default:
+        默认代码块
+} 
+            </pre>
+        </ul>
+        <h3>Loop 循环</h3>
+        <ul>
+            <li id="loop">栗子</li>
+            <button onclick="loop()">点击食用栗子</button>
+            <pre>
+for (语句 1; 语句 2; 语句 3) {
+    要执行的代码块
+}
+            </pre>
+            <li>语句1在代码开始之前开始执行,语句2定义代码循环的条件,语句3循环代码块后被执行</li>
+            <li>for/in循环将会遍历对象属性</li>
+            <pre>
+while (条件) {
+    要执行的代码块
+}  
+            </pre>
+            <li>while条件为真时,代码会一直执行</li>
+            <li>do/while循环判断条件在下面.所以无论如何,都会先执行一遍代码后,然后同上</li>
+        </ul>
+        <h3>break和continue</h3>
+        <ul>
+            <li>break语句跳出循环</li>
+            <li>continue语句跳过循环中的一个迭代</li>
+            <li>break和continue都可以跳转到标签. label:</li>
+        </ul>
+        <h3>JavaScript类型转换</h3>
+        <ul>
+            <h4>可包含值的数据类型</h4>
+            <li>nuber()转换数值</li>
+            <li>string()转换字符串</li>
+            <li>boolean()转换布尔值</li>
+            <li>字符串（string）</li>
+            <li>数字（number）</li>
+            <li>布尔（boolean）</li>
+            <li>对象（object）</li>
+            <li>函数（function）</li>
+            <h4>对象类型</h4>
+            <li>对象（Object）</li>
+            <li>日期（Date）</li>
+            <li>数组（Array）</li>
+            <h4>不能包含数值的数据类型</h4>
+            <li>null</li>
+            <li>undefined</li>
+            <li>typeof运算符来确定变量的数据类型</li>
+        </ul>
+    </div>
+    <script src="/js/第十四天.js"></script>
+</body>
+
+</html>
