@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>第十三天</title>
 </head>
+
 <body>
     <div>
-        <h3>字符串的方法和属性</h3>
+
+        <h3>字符串的方法和属性.</h3>
         <li>lenght返回字符串的长度</li>
         <li>indexOf()返回字符串中指定文本首次出现的位置索引</li>
         <li>lastIndexOf()返回指定文本在字符串中最后一次出现的位置索引</li>
@@ -107,31 +110,39 @@
         </pre>
     </div>
     <script>
-        function 添加水果(){
+        function 添加水果() {
             水果.push("橘子");
             总量 = 水果.length;
-            文本 ="<ul>";
-            for(计数=0;计数<总量;计数++) {
-            文本 += "<li>"+水果[计数]+"</li>";
+            文本 = "<ul>";
+            for (计数 = 0; 计数 < 总量; 计数++) {
+                文本 += "<li>" + 水果[计数] + "</li>";
             }
             文本 += "</ul>";
-            document.getElementById("bianli").innerHTML=文本;
+            document.getElementById("bianli").innerHTML = 文本;
         }
-        var 水果,文本,总量,计数;
-        水果 = ["火龙果","香蕉","橙子","草莓","葡萄"];
+        var 水果, 文本, 总量, 计数;
+        水果 = ["火龙果", "香蕉", "橙子", "草莓", "葡萄"];
         总量 = 水果.length;
-        文本 ="<ul>";
-        for(计数=0;计数<总量;计数++) {
-            文本 += "<li>"+水果[计数]+"</li>";
+        文本 = "<ul>";
+        for (计数 = 0; 计数 < 总量; 计数++) {
+            文本 += "<li>" + 水果[计数] + "</li>";
         }
         文本 += "</ul>";
-        function bianli(){document.getElementById("bianli").innerHTML=文本;}
-        function shuzi(){document.getElementById("shuzi").innerHTML=Number(new Date());}
-        function daxiao(){
+
+        function bianli() {
+            document.getElementById("bianli").innerHTML = 文本;
+        }
+
+        function shuzi() {
+            document.getElementById("shuzi").innerHTML = Number(new Date());
+        }
+
+        function daxiao() {
             var a = document.getElementById("dx").innerHTML;
             var b = a.replace(/example/ig, "<p>例如</p>");
-            document.getElementById("dx").innerHTML=b;
+            document.getElementById("dx").innerHTML = b;
         }
     </script>
 </body>
+
 </html>
