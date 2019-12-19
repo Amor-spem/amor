@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>JS正则表达式</h3>
+        <ul>
+            <li>语法 : / pattern/ modifiers; </li>
+            <li>正则表达式是构成搜索模式（search pattern）的字符序列。</li>
+            <li>当您搜索文本中的数据时，您可使用搜索模式来描述您搜索的内容。</li>
+            <li>正则表达式可以是单字符，或者更复杂的模式。</li>
+            <li>正则表达式可用于执行所有类型的文本搜索和文本替换操作。</li>
+            <li>search() 方法使用表达式来搜索匹配，然后返回匹配的位置。</li>
+            <li>replace() 方法返回模式被替换处修改后的字符串。</li>
+            <li>test() 通过模式来搜索字符串，然后根据结果返回 true 或 false。</li>
+        </ul>
+        <h3>JavaScript异常</h3>
+        <ul>
+            <li>try 语句使您能够测试代码块中的错误。</li>
+            <li>catch 语句允许您处理错误。</li>
+            <li>throw 语句允许您创建自定义错误。</li>
+            <li>finally 使您能够执行代码，在 try 和 catch 之后，无论结果如何。</li>
+            <li>error 对象提供两个有用的属性：name 和 message。</li>
+            <li>error 的 name 属性可返回六个不同的值：</li>
+            <li>EvalError 指示 eval() 函数中的错误。</li>
+            <li>RangeError 会在您使用了合法值的范围之外的数字时抛出。</li>
+            <li>假如您使用（引用）了尚未声明的变量，则 ReferenceError 会被抛出：</li>
+            <li>假如您计算带语法错误的代码，会 SyntaxError 被抛出：</li>
+            <li>假如您使用的值不在期望值的范围之内，则 TypeError 被抛出：</li>
+            <li>假如您在 URI 函数中使用非法字符，则 URIError 被抛出：</li>
+        </ul>
+        <h3>JavaScript作用域</h3>
+        <ul>
+            <li>作用域决定了这些变量的可访问性（可见性）。函数内部定义的变量从函数外部是不可访问的（不可见的）。</li>
+            <li>JavaScript 拥有函数作用域：每个函数创建一个新的作用域。</li>
+            <li>局部变量的作用域是局部的：只能在函数内部访问它们。在函数中声明,函数结束,变量消失</li>
+            <li>全局变量的作用域是全局的：网页的所有脚本和函数都能够访问它。在函数外声明,界面关闭,变量消失</li>
+            <li>在 JavaScript 中，对象和函数也是变量。</li>
+            <li>如果为尚未声明的变量赋值，此变量会自动成为全局变量。</li>
+            <li>函数参数也是函数内的局部变量。</li>
+        </ul>
+        <h3>hoisting提升声明</h3>
+        <ul>
+            <li>用 let 或 const 声明的变量和常量不会被提升！</li>
+            <li>初始化变量不会被提升.</li>
+            <li>在作用域头部声明变量.</li>
+            <li>"use strict"; 定义 JavaScript 代码应该以“严格模式”执行。在作用域内生效.</li>
+        </ul>
+        <h3>this是什么</h3>
+        <ul>
+            <li>在对象方法中，this 指的是此方法的“拥有者”。</li>
+            <li>在单独使用时，拥有者是全局对象，因此 this 指的是全局对象。</li>
+            <li>在 JavaScript 函数中，函数的拥有者默认绑定 this。</li>
+            <li>在 HTML 事件处理程序中，this 指的是接收此事件的 HTML 元素：</li>
+            <button onclick="this.style.display='none'">给大家表演一个我扇我自己</button>
+        </ul>
+    </div>
+</body>
+</html>
