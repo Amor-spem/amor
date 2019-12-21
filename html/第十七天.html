@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>js对象</h3>
+    <ul>
+
+        <li>在 JavaScript 中，被称为 this 的事物，指的是拥有该 JavaScript 代码的对象。</li>
+        <li>this 的值，在函数中使用时，是“拥有”该函数的对象。</li>
+        <li>请注意 this 并非变量。它是关键词。您无法改变 this 的值。</li>
+        <li> String 对象的 toUpperCase() 方法，把文本转换为大写</li>
+        <li>Getter 和 Setter 允许您定义对象访问器（被计算的属性）。</li>
+        <p>...这个鬼东西我看了半天...虽然说是一个以函数方式访问,一个以属性形式访问..但是没区别啊...</p>
+        <strong>为什么使用 Getter 和 Setter？</strong><br>
+        它提供了更简洁的语法<br>B
+        它允许属性和方法的语法相同<br>
+        它可以确保更好的数据质量<br>
+        有利于后台工作... <br>
+        <li>Object.defineProperty() 方法也可用于添加 Getter 和 Setter</li>
+        <pre>
+            var obj = {
+                counter : 0,
+                get reset() {
+                  this.counter = 0;
+                },
+                get increment() {
+                  this.counter++;
+                },
+                get decrement() {
+                  this.counter--;
+                },
+                set add(value) {
+                  this.counter += value;
+                },
+                set subtract(value) {
+                  this.counter -= value;
+                }
+              };
+              
+              // 操作计数器：
+              obj.reset;
+              obj.add = 5;
+              obj.subtract = 1;
+              obj.increment;
+              obj.decrement;
+              Object.defineProperty()
+        </pre>        
+    </ul>
+    <h3>构造函数 Person() = = 我擦.看不懂啊...</h3>
+    <ul>
+        <li>我好像有点懂了,但又不是很明白....</li>
+        <li>建一种“对象类型”的方法，是使用对象构造器函数。</li>
+        <li>这里又出现this关键字了...</li>
+        <li>在 JavaScript 中，被称为 this 的事物是代码的“拥有者”。</li>
+        <li>this 的值，在对象中使用时，就是对象本身。</li>
+        <li>在构造器函数中，this 是没有值的。它是新对象的替代物。 当一个新对象被创建时，this 的值会成为这个新对象。</li>
+        <li>请注意 this 并不是变量。它是关键词。您无法改变 this 的值。</li>
+        <li>添加新属性和新方法的方式都和以前一样</li>
+        <li>构造器无法添加新的属性 无法为对象构造器添加新方法。</li>
+        <li>但是可以通过构造函数内部来添加方法</li>
+        <li>构造器函数可以定义方法</li>
+        <li>服了....前面教程还说不能添加...转眼间来个了函数....prototype属性允许为对象构造器添加新属性!!!也可以添加新方法....</li>
+        <h3>JavaScript ES5对象方法添加了一堆</h3>
+        <pre>
+// 添加或更改对象属性
+Object.defineProperty(object, property, descriptor)
+// 添加或更改多个对象属性
+Object.defineProperties(object, descriptors)
+// 访问属性
+Object.getOwnPropertyDescriptor(object, property)
+// 以数组返回所有属性
+Object.getOwnPropertyNames(object)
+// 以数组返回所有可枚举的属性
+Object.keys(object)
+// 访问原型
+Object.getPrototypeOf(object)
+// 阻止向对象添加属性
+Object.preventExtensions(object)
+// 如果可将属性添加到对象，则返回 true
+Object.isExtensible(object)
+// 防止更改对象属性（而不是值）
+Object.seal(object)
+// 如果对象被密封，则返回 true
+Object.isSealed(object)
+// 防止对对象进行任何更改
+Object.freeze(object)
+// 如果对象被冻结，则返回 true
+Object.isFrozen(object)
+        </pre>
+    </ul>
+    <script>
+        var obj = {
+            counter: 0,
+            get reset() {
+                this.counter = 0;
+            },
+            get increment() {
+                this.counter++;
+            },
+            get decrement() {
+                this.counter--;
+            },
+            set add(value) {
+                this.counter += value;
+            },
+            set subtract(value) {
+                this.counter -= value;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
