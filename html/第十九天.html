@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>HTML DOM</h3>
+    <img src="https://pic.superbed.cn/item/5e00bd9376085c3289df1dac.gif" alt="">
+    <ul>
+        <li>HTML DOM 是 HTML 的标准对象模型和编程接口</li>
+        <li>HTML DOM 是关于如何获取、更改、添加或删除 HTML 元素的标准。</li>
+        <li>在 DOM 中，所有 HTML 元素都被定义为对象。</li>
+        <li>编程界面是每个对象的属性和方法</li>
+        <li>属性是您能够获取或设置的值（就比如改变 HTML 元素的内容）。</li>
+        <li>方法是您能够完成的动作（比如添加或删除 HTML 元素）。</li>
+        <li>获取元素内容最简单的方法是使用 innerHTML 属性。</li>
+        <li>HTML DOM 文档对象是您的网页中所有其他对象的拥有者。</li>
+        <strong>查找HTML元素</strong>
+        <li>document.getElementById(id)	通过元素 id 来查找元素</li>
+        <li>document.getElementsByTagName(name) 通过标签名来查找元素</li>
+        <li>document.getElementsByClassName(name) 通过类名来查找元素</li>
+        <strong>改变HTML元素</strong>
+        <li>element.innerHTML = new html content 改变元素的 inner HTML</li>
+        <li>element.attribute = new value 改变 HTML 元素的属性值</li>
+        <li>element.setAttribute(attribute, value) 改变 HTML 元素的属性值</li>
+        <li>element.style.property = new style 改变 HTML 元素的样式</li>
+        <strong>添加和删除元素</strong>
+        <li>document.createElement(element)	创建 HTML 元素</li>
+        <li>document.removeChild(element) 删除 HTML 元素</li>
+        <li>document.appendChild(element) 添加 HTML 元素</li>
+        <li>document.replaceChild(element) 替换 HTML 元素</li>
+        <li>document.write(text) 写入 HTML 输出流</li>
+        <h3>DOM动画</h3>
+        <pre>
+var id = setInterval(frame, 5);
+
+function frame() {
+    if (/* 测试是否完成 */) {
+        clearInterval(id);
+    } else {
+         /* 改变元素样式的代码 */
+    }
+} 
+        </pre>
+        <li>HTML DOM 允许 JavaScript 对 HTML 事件作出反应</li>
+        <li>onabort	图像的加载被中断。</li>
+        <li>onblur 元素失去焦点。</li>
+        <li>onfocus	元素获得焦点。</li>
+        <li>onchange 域的内容被改变</li>
+        <li>onclick	当用户点击某个对象时调用的事件句柄。</li>
+        <li>ondblclick 当用户双击某个对象时调用的事件句柄。</li>
+        <li>onerror	在加载文档或图像时发生错误。</li>
+        <li>onkeydown 某个键盘按键被按下。</li>
+        <li>onkeypress 某个键盘按键被按下并松开。</li>
+        <li>onkeyup	某个键盘按键被松开。</li>
+        <li>onload 一张页面或一幅图像完成加载。</li>
+        <li>onmousedown	鼠标按钮被按下。</li>
+        <li>onmousemove	鼠标被移动。</li>
+        <li>onmouseout 鼠标从某元素移开。</li>
+        <li>onmouseover	鼠标移到某元素之上。</li>
+        <li>onmouseup 鼠标按键被松开。</li>
+        <li>onreset	重置按钮被点击。</li>
+        <li>onresize 窗口或框架被重新调整大小。</li>
+        <li>onselect 文本被选中。</li>
+        <li>onsubmit 确认按钮被点击。</li>
+        <li>onunload 用户退出页面。</li>
+    </ul>
+</body>
+</html>
