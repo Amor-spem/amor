@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/第二十天.css">
+    <!-- <link rel="stylesheet" href="/js/第二十天.js"> -->
+</head>
+<body>
+    <h3 id="test">JavaScript动画</h3>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <br>
+    <button onclick="myMove()">单击启动动画</button>
+
+    <h3>事件</h3>
+    <p>onmouseover 和 onmouseout 事件可用于当用户将鼠标移至 HTML 元素上或移出时触发某个函数</p>
+    <div id="event" onmouseover="myEvent()" onmouseout="yiChu()" >我是栗子 鼠标移动到我身上</div> <br>
+    <p>onmousedown, onmouseup 以及 onclick 事件构成了完整的鼠标点击事件</p>
+    <div onmousedown="myDown(this)" onmouseup="myUp(this)">荔枝</div>
+    <h3>事件监听</h3>
+    <ul>
+        <li>addEventListener() 方法为指定元素指定事件处理程序。</li>
+        <li>addEventListener() 方法为元素附加事件处理程序而不会覆盖已有的事件处理程序。</li>
+        <li>element.addEventListener(event, function, useCapture);</li>
+        <li>第一个参数是事件的类型（比如 "click" 或 "mousedown"）。</li>
+        <li>第二个参数是当事件发生时我们需要调用的函数。</li>
+        <li>第三个参数是布尔值，指定使用事件冒泡还是事件捕获。此参数是可选的。</li>
+        <li>addEventListener() 方法允许您向相同元素添加多个事件，同时不覆盖已有事件</li>
+        <li>addEventListener() 允许您将事件监听器添加到任何 HTML DOM 对象上，比如 HTML 元素、HTML 对象、window 对象或其他支持事件的对象</li>
+        <li>appendChild() 方法，追加新元素作为父的最后一个子</li>
+        <li>除此之外还可以使用 insertBefore() 方法</li>
+        <li>getElementsByTagName() 方法返回 HTMLCollection 对象</li>
+        <li>length 属性定义了 HTMLCollection 中元素的数量</li>
+        <li>HTMLCollection 并非数组！</li>
+    </ul>
+
+
+
+
+    <script src="/js/第二十天.js"></script> 
+</body>
+</html>
