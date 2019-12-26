@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>js Browser BOM</h3>
+    <ul>
+        <li>浏览器对象模型（Browser Object Model (BOM)）允许 JavaScript 与浏览器对话。</li>
+        <li>整个都是个对象...</li>
+        <li>window.innerHeight - 浏览器窗口的内高度（以像素计）</li>
+        <li>window.innerWidth - 浏览器窗口的内宽度（以像素计）</li>
+        <li>window.open() - 打开新窗口</li>
+        <li>window.close() - 关闭当前窗口</li>
+        <li>window.moveTo() -移动当前窗口</li>
+        <li>window.resizeTo() -重新调整当前窗口</li>
+        <li>screen.width 属性返回以像素计的访问者屏幕宽度。</li>
+        <li>screen.height 属性返回以像素计的访问者屏幕的高度。</li>
+        <li>screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去诸如窗口工具条之类的界面特征。</li>
+        <li>screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去诸如窗口工具条之类的界面特征。</li>
+        <li>screen.colorDepth 属性返回用于显示一种颜色的比特数。</li>
+        <li>screen.pixelDepth 属性返回屏幕的像素深度。</li>
+        <li>location.href 属性返回当前页面的 URL。</li>
+        <li>location.hostname 属性返回（当前页面的）因特网主机的名称。</li>
+        <li>location.pathname 属性返回当前页面的路径名。</li>
+        <li>location.protocol 属性返回页面的 web 协议。</li>
+        <li>location.port 属性返回（当前页面的）互联网主机端口的编号。</li>
+        <li>location.assign() 方法加载新文档。</li>
+        <li>history.back() 方法加载历史列表中前一个 URL。</li>
+        <li>history forward() 方法加载历史列表中下一个 URL。</li>
+        <li>cookieEnabled 属性返回 true，如果 cookie 已启用，否则返回 false</li>
+        <li>appName 属性返回浏览器的应用程序名称</li>
+        <li>appCodeName 属性返回浏览器的应用程序代码名称</li>
+        <li>product 属性返回浏览器引擎的产品名称</li>
+        <li>appVersion 属性返回有关浏览器的版本信息</li>
+        <li>userAgent 属性返回由浏览器发送到服务器的用户代理报头（user-agent header）</li>
+        <p>...navigator其实蛮没用的...多个浏览器可使用相同的信息</p>
+        <li>platform 属性返回浏览器平台（操作系统）</li>
+        <li>language 属性返回浏览器语言</li>
+        <li>onLine 属性返回 true，假如浏览器在线</li>
+        <li>javaEnabled() 方法返回 true，如果 Java 已启用</li>
+        <li>alert()警告框 弹出框</li>
+        <li>confirm()确认框 弹出框</li>
+        <li>prompt()提示框 弹出框</li>
+        <li>在弹出框中显示折行，在反斜杠后面加一个字符 n</li>
+        <h3>timing事件</h3>
+        <li>前面的动画所用的setInterval()单次执行 和setTinmeout()重复执行 定时事件</li>
+        <li>window.setTimeout(function, milliseconds);</li>
+        <li>第一个参数是要执行的函数,第二个参数是间隔时间</li>
+        <li>clearTimeout() 方法停止执行 setTimeout() 中规定的函数</li>
+        <li>JavaScript 可以用 document.cookie 属性创建、读取、删除 cookie。</li>
+        <li>头大,调用cookie中有几个代码看不太懂....</li>
+        <h3>AJAX 看起来这个玩意好像很厉害的样子</h3>
+        <li>就是可以在不刷新界面的情况下修改界面,实现与服务器的通讯</li>
+        <img src="https://pic2.superbed.cn/item/5e03278576085c328902eb98.gif" alt="">
+        <li>触发事件,JavaScript创建xmlhttprequest对象与服务器进行通讯,再由JavaScript读取响应</li>
+        <li>new XMLHttpRequest() 创建新的 XMLHttpRequest 对象</li>
+        <li>abort() 取消当前请求</li>
+        <li>getAllResponseHeaders() 返回头部信息</li>
+        <li>getResponseHeader() 返回特定的头部信息</li>
+        <li>open(method, url, async, user, psw)
+            规定请求
+            method：请求类型 GET 或 POST
+            url：文件位置
+            async：true（异步）或 false（同步）
+            user：可选的用户名称
+            psw：可选的密码</li>
+        <li>send() 将请求发送到服务器，用于 GET 请求</li>
+        <li>send(string) 将请求发送到服务器，用于 POST 请求</li>
+        <li>setRequestHeader() 向要发送的报头添加标签/值对</li>
+        <li>onreadystatechange 定义当 readyState 属性发生变化时被调用的函数</li>
+        <li>readyState
+            保存 XMLHttpRequest 的状态。
+
+            0：请求未初始化
+            1：服务器连接已建立
+            2：请求已收到
+            3：正在处理请求
+            4：请求已完成且响应已就绪</li>
+        <li>responseText 以字符串返回响应数据</li>
+        <li>responseXML 以 XML 数据返回响应数据</li>
+        <li>status
+            返回请求的状态号
+
+            200: "OK"
+            403: "Forbidden"
+            404: "Not Found"</li>
+        <li>statusText 返回状态文本（比如 "OK" 或 "Not Found"）</li>
+        <li>如需像 HTML 表单那样 POST 数据，请通过 setRequestHeader() 添加一个 HTTP 头部。请在 send() 方法中规定您需要发送的数据：</li>
+        <li>open() 方法的 url 参数，是服务器上文件的地址</li>
+        <li>通过异步发送，JavaScript 不必等待服务器响应</li>
+        <li>如需执行同步的请求，请把 open() 方法中的第三个参数设置为 false</li>
+        <li>通过 XMLHttpRequest 对象，可以定义当请求接收到应答时所执行的函数</li>
+        <li>readyState 属性存留 XMLHttpRequest 的状态。</li>
+        <li>onreadystatechange 属性定义当 readyState 发生变化时执行的函数。</li>
+        <li>status 属性和 statusText 属性存有 XMLHttpRequest 对象的状态。</li>
+
+
+
+
+
+    </ul>
+    <a href="https://time.is/Beijing" id="time_is_link" rel="nofollow" style="font-size:36px">北京时间:</a>
+    <span id="Beijing_z43d" style="font-size:36px"></span>
+    <script src="//widget.time.is/t.js"></script>
+    <script>
+        time_is_widget.init({
+            Beijing_z43d: {}
+        });
+    </script>
+</body>
+
+</html>

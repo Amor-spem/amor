@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="/js/jquery-3.4.1.js"></script>
+    <style>
+        strong{
+            color: brown;
+        }
+        .yanse{
+            
+            /* padding: 1px; */
+            margin: 3px;
+            width: 400px;
+            text-align: center;
+        }
+        #eg ,#lucai{
+            font-size: 150%;
+            background-color: cadetblue;
+        }
+        #eg1 ,#lucai1{
+            color: burlywood;
+            background-color: rgb(108, 111, 112);
+            height: 100px;
+        }
+        #donghua {
+            background-color: cornflowerblue;
+            /* position: relative; */
+            text-align: center;
+            color: crimson;
+            padding: 50px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>JS JSON</h3>
+    <ul>
+        <li>JSON: JavaScript Object Notation（JavaScript 对象标记法）。</li>
+        <li>当数据在浏览器与服务器之间进行交换时，这些数据只能是文本。</li>
+        <li>JSON和JavaScript可以很容易转换</li>
+        <li>JSON 是一种轻量级的数据交换格式</li>
+        <li>JSON 具有自我描述性且易于理解</li>
+        <li>JSON 使用 JavaScript 语法，但是 JSON 格式是纯文本的。</li>
+        <li>JSON 语法衍生于 JavaScript 对象标记法语法</li>
+        <li>JSON 数据写为名称/值对。名称和值都需要双引号,键必须是字符串</li>
+        <li>JSON 格式几乎等同于 JavaScript 对象。</li>
+        <li>JSON 类似 XML，因为: <br> <strong>
+            JSON 和 XML 都是“自描述的”（人类可读的） | <br>
+            JSON 和 XML 都是分级的（值中有值） | <br>
+            JSON 和 XML 都能被大量编程语言解析和使用 | <br>
+            JSON 和 XML 都能被 XMLHttpRequest 读取</strong></li>
+        <li>JSON 与 XML 的差异在于： <br><strong>
+            JSON 不使用标签 | <br>
+            JSON 更短 | <br>
+            JSON 的读写速度更快 | <br>
+            JSON 可使用数组 | <br>
+            XML 必须使用 XML 解析器进行解析。而 JSON 可通过标准的 JavaScript 函数进行解析。</strong></li>
+        <li>JSON 被解析为可供使用的 JavaScript 对象。不必像xml一样遍历文档</li>
+        <li>除了函数日期和undefined,其余的数据类型都是有效的</li>
+        <li>日期字符串可以通过new Date()转换为日期对象</li>
+        <li>同样函数字符串也可以通过eval()来转换为函数,但不推荐在JSON中使用函数,不仅麻烦,还会丢失函数的作用域</li>
+        <li>通过 JSON.stringify() 把 JavaScript 对象转换为字符串。</li>
+        <li>在从 web 服务器接收数据时，数据永远是字符串。</li>
+        <li>通过 JSON.parse() 解析数据，这些数据会成为 JavaScript 对象。</li>
+        <li>后面出现了一堆php...暂时看不懂~</li>
+    </ul>
+        <h3>jQuery</h3>
+    <ul>
+        <li>通过 jQuery，可以选取（查询，query） HTML 元素，并对它们执行“操作”（actions）。</li>
+        <li>基础语法是：$(selector).action()</li>
+        <li>美元符号定义 jQuery</li>
+        <li>选择符（selector）“查询”和“查找” HTML 元</li>
+        <li>jQuery 的 action() 执行对元素的操作</li>
+        <li>$(document).ready(function(){ });防止文档在完全加载（就绪）之前运行 jQuery 代码。</li>
+        <li>jQuery 使用 CSS 选择器来选取 HTML 元素。</li>
+        <li>$("p") 选取 p 元素。</li>
+        <li>$("p.intro") 选取所有 class="intro" 的 p 元素。</li>
+        <li>$("p#demo") 选取所有 id="demo" 的 p 元素。</li>
+        <li>jQuery 使用 XPath 表达式来选择带有给定属性的元素。</li>
+        <li>$("[href]") 选取所有带有 href 属性的元素。</li>
+        <li>$("[href='#']") 选取所有带有 href 值等于 "#" 的元素。</li>
+        <li>$("[href!='#']") 选取所有带有 href 值不等于 "#" 的元素。</li>
+        <li>$("[href$='.jpg']") 选取所有 href 值以 ".jpg" 结尾的元素。</li>
+        <li>jQuery 的事件更加简单</li>
+        <li>显示和隐藏show() hide() toggle()</li>
+        <p id="eg" class="yanse">咏柳</p>
+        <p id="eg1" class="yanse">
+            碧玉妆成一树高， <br> 
+            万条垂下绿丝绦。 <br>
+            不知细叶谁裁出， <br> 
+            二月春风似剪刀。
+        </p>
+        <li>淡出和淡入 fadeOut() fadeIn() faedTofggle()</li>
+        <p id="lucai" class="yanse">鹿柴</p>
+        <p id="lucai1" class="yanse">
+            空山不见人， <br>
+            但闻人语响。 <br>
+            返景入深林， <br>
+            复照青苔上。
+        </p>
+        <li>slideDown()向下滑动元素,        slideUp()向上滑动元素slideToggle()切换</li>
+        <li>jQuery动画</li>
+        <li>$(selector).animate({params},speed,callback); 方法用于创建自定义动画。</li>
+        <button id="stop">STOP</button >
+        <p id="donghua">点击我</p>
+        <li>jQuery stop() 方法用于停止动画或效果，在它们完成之前。</li>
+        <li>希望在一个涉及动画的函数之后来执行语句，请使用 callback 函数。</li>
+        <li>有一种名为链接（chaining）的技术，允许我们在相同的元素上运行多条 jQuery 命令，一条接着另一条。</li>
+        
+
+    </ul>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("#eg").click(function(){
+                $("#eg1").slideToggle(1000);
+            });
+            $("#lucai").click(function(){
+                $("#lucai1").fadeToggle(3000);
+            });
+            $("#donghua").click(function(){
+                var x = $("#donghua");
+                x.animate({
+                    height:"200px",
+                    opacity:"0.5",
+                    lineHeight:"200px",
+                });
+                x.animate({
+                    width:"200px",
+                    opacity:"1",
+                    // lineHeight:"50px",
+                });
+                x.animate({
+                    height:"50px",
+                    opacity:"0.5",
+                    lineHeight:"50px",
+                });
+                x.animate({
+                    width:"50px",
+                    opacity:"1",
+                    lineHeight:"50px",
+                });
+            });
+            $("#stop").click(function(){
+                $("#donghua").stop(true);
+            })
+        });
+
+    </script>
+</body>
+</html>B
