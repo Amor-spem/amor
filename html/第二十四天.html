@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>jQuery - 获得内容和属性</h3>
+    <ul>
+        <li>获得内容 - text()、html() 以及 val()</li>
+        <li>获取属性 - attr()</li>
+        <li>语法相同 选取目标,跟着函数,返回内容</li>
+        <li>函数内无值则返回内容,有值则设置内容~真是简单明了~</li>
+        <li>同时,值可以为回调函数,有两个参数,被选元素的当前下标,和原始值,父函数将返回此函数的返回值~</li>
+        <li>attr()函数两个参数,属性名称,属性内容,同时,也支持回调函数,也可设置多个内容</li>
+        <li>append() - 在被选元素的结尾插入内容</li>
+        <li>prepend() - 在被选元素的开头插入内容</li>
+        <li>after() - 在被选元素之后插入内容</li>
+        <li>before() - 在被选元素之前插入内容</li>
+        <li>remove() - 删除被选元素（及其子元素）</li>
+        <li>empty() - 从被选元素中删除子元素</li>
+        <li>remove() 方法也可接受一个参数，允许对被删元素进行过滤。</li>
+        <li>addClass() - 向被选元素添加一个或多个类</li>
+        <li>removeClass() - 从被选元素删除一个或多个类</li>
+        <li>toggleClass() - 对被选元素进行添加/删除类的切换操作</li>
+        <li>css() - 设置或返回样式属性</li>
+        <li>width() 方法设置或返回元素的宽度（不包括内边距、边框或外边距）。</li>
+        <li>height() 方法设置或返回元素的高度（不包括内边距、边框或外边距）。</li>
+        <li>祖先是父、祖父、曾祖父等等。后代是子、孙、曾孙等等。同胞拥有相同的父</li>
+        <li>parent() 方法返回被选元素的直接父元素。</li>
+        <li>parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (html)。</li>
+        <li>parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素。</li>
+        <li>children() 方法返回被选元素的所有直接子元素。也可以使用可选参数来过滤对子元素的搜索</li>
+        <li>find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。</li>
+        <li>siblings() 方法返回被选元素的所有同胞元素。</li>
+        <li>next() 方法返回被选元素的下一个同胞元素。</li>
+        <li>nextAll() 方法返回被选元素的所有跟随的同胞元素。</li>
+        <li>nextUntil() 方法返回介于两个给定参数之间的所有跟随的同胞元素。</li>
+        <li>prev(), prevAll() 以及 prevUntil() 方法的工作方式与上面的方法类似，只不过方向相反而已：它们返回的是前面的同胞元素（在 DOM 树中沿着同胞元素向后遍历，而不是向前）。</li>
+        <li>first() 方法返回被选元素的首个元素。</li>
+        <li>last() 方法返回被选元素的最后一个元素。</li>
+        <li>eq() 方法返回被选元素中带有指定索引号的元素。</li>
+        <li>filter() 方法允许您规定一个标准。不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回。</li>
+        <li>not() 方法返回不匹配标准的所有元素。</li>
+        <li>jQuery - AJAX</li>
+        <li>AJAX 是与服务器交换数据的艺术，它在不重载全部页面的情况下，实现了对部分网页的更新。</li>
+        <li>$(selector).load(URL,data,callback); --- load() 方法是简单但强大的 AJAX 方法</li>
+        <li>必需的 URL 参数规定希望加载的 URL。</li>
+        <li>可选的 data 参数规定与请求一同发送的查询字符串键/值对集合。</li>
+        <li>可选的 callback 参数是 load() 方法完成后所执行的函数名称。</li>
+        <li>$.get() 方法通过 HTTP GET 请求从服务器上请求数据。</li>
+        <li>$.post() 方法通过 HTTP POST 请求从服务器上请求数据。</li>
+        <li>noConflict() 方法会释放会 $ 标识符的控制，这样其他脚本就可以使用它了。</li>
+        <li>noConflict() 可返回对 jQuery 的引用，可以把它存入变量，以供稍后使用。</li>
+        <li>可以把 $ 符号作为变量传递给 ready 方法。</li>
+    </ul>
+</body>
+</html>

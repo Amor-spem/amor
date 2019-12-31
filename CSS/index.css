@@ -1,0 +1,119 @@
+body,html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#box{
+    /* background-color: slategrey; */
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+    
+}
+.left,.right{
+    /* height: 200px; */
+    /* width: 200px; */
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* height: 100%; */
+    
+}
+
+#Title{
+    background-color: #EBC0D6;
+    height: 50px;
+    border-left: 6px solid #F35C5A;
+    margin: 1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: larger;
+ 
+}
+.left{
+    background-color: #EED6B9;
+    width: 200px;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+}
+.right{
+    background-color: #eeeeee;
+    width: auto;
+    flex-grow: 1;
+    border-left: 8px #214852;
+    border-style: double;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.menu li{
+    padding-left: 10px;
+}
+/* .menu{
+    line-height: 1.5;
+} */
+ul, li{
+    list-style-type: none;
+    /* margin: 0px; */
+    /* padding-left: 10px;
+    padding-top: 5px; */
+
+}
+ul b{
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color: #EBC0D6;
+    background-color: #214852;
+
+    width: 194px;
+    height: 30px;
+
+    /* 
+    border-style: solid;
+    border-width: 3px;
+    border-color: turquoise; */
+    /* border-radius: 30px 0 0 30px; */
+    border-left: 6px solid #F35C5A;
+
+    /* margin-bottom: 2px; */
+    margin: 1px;
+}
+ul li li{
+    text-align: center;
+    color: #EBC0D6;
+    background-color: #214852;
+    /* border-radius: 30px 0 0 30px; */
+    /* padding-left: 10px; */
+    margin: 1px 0 1px 20px ;
+    border-left: 6px solid #F35C5A;
+}
+footer{
+    /* align-self: flex-end; */
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background-color: #F35C5A;
+    width: 200px;
+    /* line-height: 30px; */
+    font-size: 2ex;
+    display: none;
+}
+#menuButton{
+    background-image: url(/image/operation.png);
+    float: left;
+    width: 50px;
+    height: 50px;
+    /* max-width: 200px;
+    max-height: 200px; */
+    /* border-radius: 50%; */
+    background-size: 50px 50px;
+    position: absolute;
+    /* z-index: 1; */
+    
+}
