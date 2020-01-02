@@ -33,6 +33,7 @@ body,html{
 .left{
     background-color: #EED6B9;
     width: 200px;
+    display: none;
     /* display: flex; */
     /* flex-direction: row-reverse; */
 }
@@ -40,8 +41,8 @@ body,html{
     background-color: #eeeeee;
     width: auto;
     flex-grow: 1;
-    border-left: 8px #214852;
-    border-style: double;
+    /* border-left: 8px #214852; */
+    /* border-style: double; */
 }
 iframe{
     height: 100%;
